@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Finder</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen flex flex-col items-center p-6 font-sans bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="w-full max-w-2xl mb-8 text-center">
+      <h1 class="text-4xl font-bold mb-2">GitHub Profile Finder</h1>
+      <p class="text-gray-400">Search any GitHub user by their username</p>
+    </header>
+
+    <!-- Search Input -->
+    <div class="w-full max-w-2xl mb-10">
+      <div class="flex items-center bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-md px-2">
+        <input 
+          type="text" 
+          id="usernameInput" 
+          placeholder="Enter GitHub username..." 
+          class="flex-grow p-4 bg-transparent focus:outline-none text-lg placeholder-gray-400"
+        />
+        <button 
+          id="searchBtn"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 font-semibold transition-colors duration-300 rounded-xl"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Profile Card -->
+    <section id="profileCard" class="w-full max-w-2xl bg-gray-800 rounded-2xl shadow-2xl p-6">
+      
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
